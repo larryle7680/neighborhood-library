@@ -18,18 +18,19 @@ public class NeighborhoodLibraryApp {
     //Main Method
     public static void main(String[] args) {
 
+        //Adding books to array
+        book[0] = new Book("To Kill a Mockingbird",1,"ISBN-11111",false,"");
+        book[1] = new Book("1984",2,"ISBN-22222",false,"");
+        book[2] = new Book("The Great Gatsby",3,"ISBN-33333",false,"");
+        book[3] = new Book("The Catcher in the Rye",4,"ISBN-44444",false,"");
+        book[4] = new Book("Pride and Prejudice",5,"ISBN-55555",false,"");
+        book[5] = new Book("The Hobbit",6,"ISBN-55555",false,"");
+        book[6] = new Book("Moby-Dick",7,"ISBN-55555",false,"");
+        book[7] = new Book("Fahrenheit 451",8,"ISBN-55555",false,"");
+        book[8] = new Book("Brave New World",9,"ISBN-55555",false,"");
+        book[9] = new Book("The Lord of the Rings",10,"ISBN-55555",false,"");
 
-
-    }
-
-    //checkOutMethod
-    public static String checkOut(String name){
-
-    }
-
-
-    //Creating a menu method
-    public static void storeHomeScreen(){
+        //Book Menu
         boolean running = true;
         while(running){
             for(int i = 0; i < book.length; i++){
@@ -45,10 +46,10 @@ public class NeighborhoodLibraryApp {
                 //Using a switch statement to process users options
                 switch(usersChoice){
                     case 1:
-                        showAvailableBooks();
+
                         break;
                     case 2:
-                        showCheckedOutBooks();
+
                         break;
                     case 3:
                         return;
@@ -65,6 +66,7 @@ public class NeighborhoodLibraryApp {
 
 
 
+    }
 
 
 
@@ -77,4 +79,9 @@ public class NeighborhoodLibraryApp {
 
 
 
-}
+
+
+
+
+
+
